@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="palto.css" />
+    <link rel="stylesheet" href="pin_style.css" />
+    <link rel="stylesheet" href="modal_style.css" />
+    <link rel="stylesheet" href="final_board.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navigation_bar">
+      <div class="add_pin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm11.3-395.3l112 112c4.6 4.6 5.9 11.5 3.5 17.4s-8.3 9.9-14.8 9.9H304v96c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V256H144c-6.5 0-12.3-3.9-14.8-9.9s-1.1-12.9 3.5-17.4l112-112c6.2-6.2 16.4-6.2 22.6 0z" />
+        </svg>
+      </div>
+    </div>
+    <div class="pin_container"></div>
+    <div class="add_pin_modal">
+      <div class="add_pin_container">
+        <div class="side" id="left_side">
+          <div class="section1">
+            <label for="uplaod_img" id="uplaod_img_label">
+              <div class="uplaod_img_container">
+                <div id="dotted_border">
+                  <div>click to Uplaod</div>
+                  <div>
+                    Recomendation use high-quality -jpg files less than 20mb
+                  </div>
+                </div>
+              </div>
+              <input type="file" name="uplaod_img" id="uplaod_img" />
+            </label>
+            <div class="modals_pin">
+              <div class="pin_image">
+                <!-- <img src="" alt="pin_image" /> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="section2">
+            <div class="save_from_site">Save From Site</div>
+          </div>
+        </div>
+        <div class="side" id="right_side">
+          <div class="section4">
+            <div class="select_size">
+              <select name="pin_size" id="pin_size">
+                <option value="" disabled selected>Select</option>
+                <option value="small">Small</option>
+                <option value="medium">Madium</option>
+                <option value="large">Large</option>
+              </select>
+              <div class="save_pin">Save</div>
+            </div>
+          </div>
+
+          <div class="section2">
+            <input
+              placeholder="Add your title"
+              type="text"
+              name=""
+              class="new_pin_input"
+              id="pin_title" />
+            <input
+              placeholder="tell everyone that you well pin"
+              type="text"
+              name=""
+              class="new_pin_input"
+              id="pin_description" />
+            <input
+              placeholder="Add a destination link"
+              type="text"
+              name=""
+              class="new_pin_input"
+              id="pin_desctination" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="final_board.js"></script>
+  </body>
+</html>

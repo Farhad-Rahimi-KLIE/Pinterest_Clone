@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="palto.css" />
+    <link rel="stylesheet" href="modal_style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="add_pin_modal">
+      <div class="add_pin_container">
+        <div class="side" id="left_side">
+          <div class="section1">
+            <label for="uplaod_img" id="uplaod_img_label">
+              <div class="uplaod_img_container">
+                <div id="dotted_border">
+                  <div>click to Uplaod</div>
+                  <div>
+                    Recomendation use high-quality -jpg files less than 20mb
+                  </div>
+                </div>
+              </div>
+              <input type="file" name="uplaod_img" id="uplaod_img" />
+            </label>
+            <div class="modals_pin">
+              <div class="pin_image">
+                <!-- <img src="" alt="pin_image" /> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="section2">
+            <div class="save_from_site">Save From Site</div>
+          </div>
+        </div>
+        <div class="side" id="right_side">
+          <div class="section4">
+            <div class="select_size">
+              <select name="pin_size" id="pin_size">
+                <option value="" disabled selected>Select</option>
+                <option value="small">Small</option>
+                <option value="medium">Madium</option>
+                <option value="large">Large</option>
+              </select>
+              <div class="save_pin">Save</div>
+            </div>
+          </div>
+
+          <div class="section2">
+            <input
+              placeholder="Add your title"
+              type="text"
+              name=""
+              class="new_pin_input"
+              id="pin_title" />
+            <input
+              placeholder="tell everyone that you well pin"
+              type="text"
+              name=""
+              class="new_pin_input"
+              id="pin_description" />
+            <input
+              placeholder="Add a destination link"
+              type="text"
+              name=""
+              class="new_pin_input"
+              id="pin_desctination" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="modal_script.js"></script>
+  </body>
+</html>

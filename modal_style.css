@@ -1,0 +1,153 @@
+.add_pin_modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.add_pin_container{
+    padding: 35px;
+    width: 880px;
+    height: 674px;
+    border-radius: 16px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transition: translate(-50%, -50%);
+    overflow: hidden;
+    display: flex;
+    background-color: #ffffff;
+}
+.side{
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+}
+#left_side{
+    /* background-color: orange; */
+}
+#right_side{
+    /* background-color: blue; */
+}
+.section1{
+    width: 100%;
+    height: 8%;
+    /* background-color: purple; */
+}
+.section2{
+    width: 100%;
+    height: 80%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left_side .section1 #uplaod_img_label{
+    width: 100%;
+    height: 100%;
+}
+#left_side .section1 #uplaod_img_label .uplaod_img_container{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+#left_side .section1 #uplaod_img_label .uplaod_img_container #dotted_border{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px dashed #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 230px;
+}
+#uplaod_img{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+#uplaod_img{
+    position: absolute;
+    bottom: 70px;
+    left: 140px;
+}
+.save_from_site{
+    position: absolute;
+    bottom: 70px;
+    width: 340px;
+    height: 48px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: #efefef;
+}
+.modals_pin{
+    width: 350px;
+    height: 512px;
+    border-radius: 16px;
+    position: relative;
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+}
+.pin_image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pin_image img{
+    max-height: 100%;
+}
+#right_side .section4{
+    display: flex;
+    justify-content: flex-end;
+}
+#right_side .section4 .select_size{
+    width: 236px;
+    height: 40px;
+    display: flex;
+}
+#right_side .section4 .select_size select{
+    width: 70%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #efefef;
+}
+#right_side .section4 .select_size .save_pin{
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    background-color: #e60023;
+    cursor: pointer;
+}
+#right_side .section2 .new_pin_input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #c6c6c6;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}

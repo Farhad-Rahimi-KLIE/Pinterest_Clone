@@ -1,0 +1,14 @@
+*{
+    font-family: sans-serif;
+    color: #211922;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+body,
+div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
